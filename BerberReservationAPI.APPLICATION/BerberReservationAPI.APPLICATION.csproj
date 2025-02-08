@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DependencyResolver\" />
+    <Folder Include="DTOs\BerberDto\" />
+    <Folder Include="DTOs\CustomerDto\" />
+    <Folder Include="DTOs\ServiceDto\" />
+    <Folder Include="DTOs\ReservationDto\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BerberReservationAPI.DOMAIN\BerberReservationAPI.DOMAIN.csproj" />
+  </ItemGroup>
+
+</Project>
