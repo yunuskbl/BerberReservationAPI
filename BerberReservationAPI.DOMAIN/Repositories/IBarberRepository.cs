@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BerberReservationAPI.DOMAIN.Repositories
 {
-    public interface IBarberRepository:IRepository<Barber>
+    public interface IBarberRepository:IRepository<Berber>
     {
     }
 }

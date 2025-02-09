@@ -15,9 +15,11 @@ namespace BerberReservationAPI.PERSISTENCE.ContextClasses
         public BerberDbContext(DbContextOptions<BerberDbContext> dbContext)
         {
         }
-        public DbSet<Barber> Barbers { get; set; }
+        public DbSet<Berber> Barbers { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<OtpCode> OtpCodes { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
     }
 }

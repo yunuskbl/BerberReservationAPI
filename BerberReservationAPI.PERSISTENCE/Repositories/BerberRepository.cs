@@ -9,7 +9,7 @@ using BerberReservationAPI.PERSISTENCE.ContextClasses;
 
 namespace BerberReservationAPI.PERSISTENCE.Repositories
 {
-    public class BerberRepository:BaseRepository<Barber>,IBarberRepository
+    public class BerberRepository:BaseRepository<Berber>,IBarberRepository
     {
         public BerberRepository(BerberDbContext context):base(context)
         {

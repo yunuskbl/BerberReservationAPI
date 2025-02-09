@@ -12,6 +12,7 @@ namespace BerberReservationAPI.DOMAIN.Entities
         public string? CustomerName { get; set; }
         public string? PhoneNumber { get; set; }
         public string? Email { get; set; }
+        public AppUser User { get; set; }
 
         public virtual ICollection<Reservation>? Reservations { get; set; }  
     }

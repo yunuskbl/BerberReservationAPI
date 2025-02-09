@@ -1,16 +1,18 @@
-﻿using BerberReservationAPI.DOMAIN.Entities;
+﻿using System.Threading;
+using BerberReservationAPI.DOMAIN.Entities;
 
 namespace BerberReservationAPI.DOMAIN
 {
     public class Reservation:BaseEntity
     {
-        public int ReservationID { get; set; }
-        public DateTime DateTime { get; set; }
-        public string ServiceName { get; set; } = "Saç Sakal Tıraşı";
-        
-        public virtual Customer? Customer { get; set; }
+        public int Id { get; set; }
+        public int CustomerId { get; set; }
+        public Customer? Customer { get; set; }
 
-        public virtual Barber? Barber { get; set; }
-        public virtual Service? Service { get; set; }
+        public int BerberId { get; set; }
+        public Berber? Berber { get; set; }
+
+        public DateTime ReservationDate { get; set; }
+        public bool IsConfirmed { get; set; }
     }
 }
